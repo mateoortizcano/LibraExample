@@ -1,8 +1,13 @@
 name := "LibraExample"
 version := "0.1"
-scalaVersion := "2.12.4"
-libraryDependencies += "com.github.to-ithaca" %% "libra" % "0.3.0"
-lazy val buildSettings = Seq(
+
+inThisBuild(Seq(
   scalaOrganization := "org.typelevel",
-  scalacOptions += "-Yliteral-types"
-)
+  scalaVersion      := "2.12.4-bin-typelevel-4",
+  scalacOptions     += "-Yliteral-types",
+  libraryDependencies += "com.github.to-ithaca" %% "libra" % "0.4.0"
+))
+
+//libraryDependencies += "com.github.to-ithaca" %% "libra" % "0.4.0"
+//scalaOrganization := "org.typelevel"
+//scalacOptions += "-Yliteral-types"

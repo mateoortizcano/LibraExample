@@ -1,1 +1,6 @@
 sbt compile test updateClassifiers updateSbtClassifiers
+compile
+reload
+compile
+update
+compile
